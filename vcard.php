@@ -8,8 +8,9 @@ $area = "+358";
 header("Content-type: text/plain");
 header("Content-Disposition: attachment; filename=". $file .";");
 
-echo "BEGIN:VCARD\n VERSION:3.0
-REV:". date("Z") ."
+echo "BEGIN:VCARD
+VERSION:3.0
+REV:". date("c") ."
 N;CHARSET=utf-8:$item->name2;$item->name1;;;
 FN;CHARSET=utf-8:$item->name1 $item->name2
 TITLE;CHARSET=utf-8:$item->title
